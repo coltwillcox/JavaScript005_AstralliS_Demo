@@ -10,6 +10,7 @@
     <body>
         <p>AstralliS Demo</p>
 
+        <!--Dropdown menues.-->
         <select id="menu1" name="drinks" onchange="calculate()">
             <option selected value="0"> -- Select drink -- </option>
             <option value="12">Cola $12</option>
@@ -23,11 +24,20 @@
             <option value="6">Orange $6</option>
             <option value="5">Banana $5</option>
         </select>
+        <br>
+
+        <!--Radio buttons.-->
         <form action="">
             <input type="radio" name="hand" value="right" onclick="calculate()" checked>Right hand<br>
             <input type="radio" name="hand" value="left" onclick="calculate()">Left hand<br>
         </form>
         <br>
+
+        <!--Checkboxes.-->
+        <form action="">
+            <input type="checkbox" name="sandwich" value="15" onclick="calculate()">Pleska $15<br>
+            <input type="checkbox" name="sandwich" value="10" onclick="calculate()">Tost $10
+        </form>
         <p>Total: </p><p id="total"></p>
 
         <script src="main.js"></script>
